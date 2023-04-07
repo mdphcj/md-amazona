@@ -1,0 +1,11 @@
+<LinkContainer
+    // to={`/search?category=${category}`}
+    to={{
+      pathname: '/search',
+      // hash: '#hash',
+      search: `?category=${category}`,
+    }}
+    onClick={() => setSidebarIsOpen(false)}
+    >
+    <Nav.Link>{category}</Nav.Link>
+</LinkContainer>
