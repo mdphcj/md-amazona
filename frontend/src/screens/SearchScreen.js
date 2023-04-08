@@ -263,6 +263,9 @@ export default function SearchScreen() {
                     value={order}
                     onChange={(e) => {
                       navigate(getFilterUrl({ order: e.target.value }));
+                      // navigate(
+                      //   `/search` + getFilterUrl({ order: e.target.value })
+                      // );
                     }}
                   >
                     <option value="newest">Newest Arrivals</option>
